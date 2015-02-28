@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background: transparent;
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: none;
+  text-shadow: none;
+}
+img,
+fieldset {
+  border: 0;
+}
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1.0em;
+}
+h6 {
+  font-size: 0.9em;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+ol li,
+ul li {
+  list-style-type: disc;
+}
+dt {
+  font-weight: bold;
+}
+a,
+a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+a[href]:after {
+  content: " (" attr(href) ")";
+}
+abbr[title]:after {
+  content: " (" attr(title) ")";
+}
+input,
+select,
+textarea {
+  border: 1px solid #000;
+}
+input {
+  padding: 1px 0;
+}
+select {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  line-height: normal;
+}
+img {
+  max-width: 100%;
+}
+pre,
+blockquote {
+  border: 1px solid #000;
+  page-break-inside: avoid;
+}
+div {
+  text-align: left;
+}
+caption {
+  display: none;
+}
+table {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table th,
+table td {
+  padding: 5px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: left;
+}
+tr,
+img {
+  page-break-inside: avoid;
+}
+.visible-print-block {
+  display: block !important;
+}
+.visible-print-inline {
+  display: inline !important;
+}
+.visible-print-inline-block {
+  display: inline-block !important;
+}
+.hidden-print {
+  display: none !important;
+}

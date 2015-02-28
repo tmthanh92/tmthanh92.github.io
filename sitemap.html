@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sitemap</title>
+    <style>
+      .task {display: none;}
+      .task.active {display: table-row;}
+      a {display: block; color: #444; text-decoration: none;}
+      a:hover {color: #f36f21;}
+      *, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+      body {margin: 0; font-family: Arial; font-size: 11px; color: #444;}
+      table {border-collapse: collapse; border-spacing: 0;}
+      .table {width: 100%; margin: 0 auto 20px;}
+      .table caption {padding: 20px 10px; font-weight: bold; font-size: 25px; color: #f36f21; text-transform: uppercase;}
+      .table tr > th, .table tr > td {padding: 5px 3px; line-height: 1.428571429; vertical-align: top; border-bottom: 1px solid #f36f21;}
+      .table thead > tr > th {font-size: 12px;}
+      .table thead tr:first-child th {vertical-align: middle; border-top: 2px solid #f36f21;}
+      .table .template > td:first-child, .list h2 a {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDBDOUFCNEYyQ0FGMTFFM0FCMUM5MTkwM0QwOUJCNjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDBDOUFCNTAyQ0FGMTFFM0FCMUM5MTkwM0QwOUJCNjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMEM5QUI0RDJDQUYxMUUzQUIxQzkxOTAzRDA5QkI2MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMEM5QUI0RTJDQUYxMUUzQUIxQzkxOTAzRDA5QkI2MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pj5/52wAAACGSURBVHjaYnRxceFgYGCYDMTrdu/evZ0BCTAB8VYgTgHi5a6urmboktegbH4gPgBUYAWTZPz//z8DUKACyG6Hiv0CYiegFUfBkiAAVBAFpJYimRrKxIAHsEB1YTcW6BWQN3KgEt+B2AUocQzmWi2oxEcgdoBJwCS9gXgOEEcCJU4h2wkQYABZLy0qa/KvIgAAAABJRU5ErkJggg==); background-repeat: no-repeat; background-position: 4px center;}
+      .table .template.active > td:first-child, .list h2 a.active {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADImlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowMEM5QUI0RjJDQUYxMUUzQUIxQzkxOTAzRDA5QkI2MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowMEM5QUI1MDJDQUYxMUUzQUIxQzkxOTAzRDA5QkI2MSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjAwQzlBQjREMkNBRjExRTNBQjFDOTE5MDNEMDlCQjYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAwQzlBQjRFMkNBRjExRTNBQjFDOTE5MDNEMDlCQjYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Pn/nbAAAAJNJREFUKFNjdHFx4WBgYNgKxNd2796dC6ThwNXVdTKQowXE3kxAAsRxAuIcoEQFTBWUnQOVm8wINNETyFkOxPxQRdFQeimU/gikIxn////PANRtBuQcAGJOZKuB7O9A7AB00imQ1QwgBpByAeJfSApBbBeoHAPYRCR3WQPZR6B8G6CiozA5FIUgQaAzQqC2rEF2BgDR8zBsD/wSJgAAAABJRU5ErkJggg==);}
+      .table .template > td, .table .template > th {background-color: #fee9c8;}
+      .table tr > td, .table tr > th {border-left: 1px solid #f36f21;}
+      .table tr > td:first-child, .table tr > th:first-child {border-left: none;}
+      .table .title {padding: 7px 10px; border-top: 1px solid #f36f21;}
+      .table .title strong {font-size: 20px; color: #f36f21;}
+      .table .number {width: 35px; text-align: center;}
+      .table td.number {padding-left: 12px; padding-right: 6px; text-align: right;}
+      .table .psd {width: 150px;}
+      .table .file {width: 200px;}
+      .table .status {width: 150px;}
+      .table .complete {width: 100px; text-align: center;}
+      .table .date {width: 100px; text-align: center;}
+      .table .validated {width: 100px; text-align: center;}
+      .table .developer {width: 120px;}
+      .table .checked-by {width: 120px;}
+      .table .template .reading {background-color: #ee82ee;}
+      .table .template .building {background-color: #eeeeee;}
+      .table .template .waiting {background-color: #ffff00;}
+      .table .template .modifying {background-color: #ffa500;}
+      .table .template .pending {background-color: #ff8080;}
+      .table .template .cutting {background-color: #ffd700;}
+      .table .template .integrating {background-color: #00ffff;}
+      .table .template .checked {background-color: #9acd32;}
+      .table .template .out-of-scope {background-color: #969696;}
+      .list {overflow: hidden;}
+      .list h2 a {padding: 0 6px 0 14px; font-size: 20px; }
+      .list h2 a.active {color: #f36f21;}
+      .list .content {padding: 7px 10px;}
+      .list .col {float: left; width: 50%;}
+      .list .col dt {font-size: 12px; font-weight: bold; padding: 0 0 10px 0;}
+      .list .col dd {display: list-item; list-style-type: disc; font-size: 11px; padding: 3px 0;}
+      .list .col a {display: inline;}
+    </style>
+    <script src="js/modernizr.js"></script>
+    <script src="js/libs.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.template').click(function(){
+          $(this).closest('tr').toggleClass('active').nextUntil('.template').filter('.task').toggleClass('active');
+        }).find('.status').each(function(){
+          switch($(this).text()){
+            case 'Reading specification':
+              $(this).addClass('reading');
+              break;
+            case 'Building structure':
+            case 'Building function':
+              $(this).addClass('building');
+              break;
+            case 'Waiting for PSD':
+              $(this).addClass('waiting');
+              break;
+            case 'Modifying follow new PSD':
+              $(this).addClass('modify');
+              break;
+            case 'Pending for information':
+              $(this).addClass('pending');
+              break;
+            case 'Cutting template':
+              $(this).addClass('cutting');
+              break;
+            case 'Integrating template':
+              $(this).addClass('integrating');
+              break;
+            case 'Checked and validated':
+              $(this).addClass('checked');
+              break;
+            case 'Out of scope':
+              $(this).addClass('out-of-scope');
+              break;
+          }
+        });
+        $('.list .content').hide();
+        $('.list h2 a').click(function(){
+          $(this).toggleClass('active').closest('h2').next('.content').slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table class="table">
+      <caption>Project</caption>
+      <thead>
+        <tr>
+          <th class="number">No.</th>
+          <th class="psd">PSD</th>
+          <th class="file">File</th>
+          <th title="Reading specification
+Building structure
+Waiting for PSD
+Modifying follow new PSD
+Pending for information
+Cutting template
+Integrating template
+Checked and validated
+Out of scope" class="status">Status</th>
+          <th class="complete">Complete</th>
+          <th class="date">Start Date</th>
+          <th class="date">End Date</th>
+          <th class="validated">Checklist</th>
+          <th class="validated">Unit Test</th>
+          <th class="validated">Code Review</th>
+          <th class="developer">Developer</th>
+          <th class="checked-by">Checked by</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="12" class="title"><strong>Template</strong></td>
+        </tr>
+        <tr class="template">
+          <td class="number">-</td>
+          <td class="psd">Layer</td>
+          <td class="file"><a href="template-layer.html">template-layer.html</a></td>
+          <td class="status">Building structure</td>
+          <td class="complete">0%</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="developer">Developer name</td>
+          <td class="checked-by">Leader name</td>
+        </tr>
+        <tr class="template">
+          <td class="number">-</td>
+          <td class="psd">Sprite</td>
+          <td class="file"><a href="template-sprite.html">template-sprite.html</a></td>
+          <td class="status">Building structure</td>
+          <td class="complete">0%</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="developer">Developer name</td>
+          <td class="checked-by">Leader name</td>
+        </tr>
+        <tr class="template">
+          <td class="number">-</td>
+          <td class="psd">Style Guide</td>
+          <td class="file"><a href="template-style-guide.html">template-style-guide.html</a></td>
+          <td class="status">Building structure</td>
+          <td class="complete">0%</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="developer">Developer name</td>
+          <td class="checked-by">Leader name</td>
+        </tr>
+        <tr class="template">
+          <td class="number">1</td>
+          <td class="psd">Homepage.psd</td>
+          <td class="file"><a href="index.html">index.html</a></td>
+          <td class="status">Cutting template</td>
+          <td class="complete">0%</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="developer">Developer name</td>
+          <td class="checked-by">Leader name</td>
+        </tr>
+        <tr class="task">
+          <td colspan="3">Comment for task 1</td>
+          <td class="status">Cutting template</td>
+          <td class="complete">0%</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="developer">Developer name</td>
+          <td class="checked-by">Leader name</td>
+        </tr>
+        <tr class="task">
+          <td colspan="3">Comment for task 2</td>
+          <td class="status">Cutting template</td>
+          <td class="complete">0%</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="date">dd/mm/yyyy</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="validated">N</td>
+          <td class="developer">Developer name</td>
+          <td class="checked-by">Leader name</td>
+        </tr>
+      </tbody>
+    </table>
+    <article class="list">
+      <h2><a href="javascript:void(0);">Checklist</a></h2>
+      <div class="content">
+        <div class="col">
+          <dl>
+            <dt>Top Rules</dt>
+            <dd>You must report project status and timing daily</dd>
+            <dd>You must follow Git rules</dd>
+            <dd>You must follow Code conventions</dd>
+            <dd>You must not copy and paste code, only use source code manager has approved</dd>
+            <dd>You must perform functional test of your code, do boundary and branch test</dd>
+            <dd>You must follow design, storyboard, requirement and schedule provided by manager</dd>
+            <dd>If requirement is not 100% clear, you must ask, never assume</dd>
+            <dd>Raise issue to manager as soon as possible</dd>
+            <dd>Do not copy or send code offsite, all code is owned by Sutrix client</dd>
+            <dd>Never test on client’s production environment</dd>
+            <dd>Golden rule: Complete your work on time with high quality</dd>
+          </dl>
+          <dl>
+            <dt>General</dt>
+            <dd>The page is validated by W3C</dd>
+            <dd>The page is checked on big screen resolution</dd>
+            <dd>The page is checked on supported browsers</dd>
+            <dd>The links and buttons should have rollover effects</dd>
+            <dd>Put CSS at top</dd>
+            <dd>Put Javascript at bottom</dd>
+            <dd>Using CSS Sprite for images</dd>
+            <dd>Check Y!Slow / PageSpeed tool at least grade B</dd>
+            <dd>Create libraries for special text fonts, images, banners and backgrounds</dd>
+            <dd>No Javascript error message on supported browsers</dd>
+            <dd>The forms must have validation functions</dd>
+            <dd>Input restriction follow the requirements in the storyboard</dd>
+            <dd>Avoid script inside HTML file, use external JS file</dd>
+            <dd>Flash detection is required</dd>
+          </dl>
+          <dl>
+            <dt>Working Space</dt>
+            <dd>Draft files must be removed at the end of day</dd>
+            <dd>Files are placed in the correspondent folders</dd>
+            <dd>Source code must be committed to GIT</dd>
+          </dl>
+        </div>
+        <div class="col">
+          <dl>
+            <dt>Source Code</dt>
+            <dd>Source code must not contain any words related to Sutrixmedia</dd>
+            <dd>No Sutrix text in source code</dd>
+            <dd>No Vietnamese text in source code</dd>
+            <dd>No Developer Name or Email in source code</dd>
+          </dl>
+          <dl>
+            <dt>HTML Source</dt>
+            <dd>The structure supports changing content</dd>
+            <dd>The HTML code is well structured and semantic</dd>
+            <dd>Do not scale images in HTML</dd>
+            <dd>Each image has a relevant ALT attribute</dd>
+            <dd>Each link and input button has a relevant TITLE attribute</dd>
+            <dd>Favicon is set on each page</dd>
+            <dd>Each page has a unique title</dd>
+            <dd>Avoid using TABLE tag, should be change to DIV tag</dd>
+            <dd>Contact information and meeting use microformats</dd>
+            <dd>For .Net project: use one form, prefer CLASS selector than ID selector</dd>
+          </dl>
+          <dl>
+            <dt>CSS Source</dt>
+            <dd>Make sure the page has CSS print</dd>
+            <dd>Each section in the CSS file must have comment</dd>
+            <dd>CSS code is well structured and avoid CSS hack</dd>
+            <dd>Avoid using @import, !important</dd>
+          </dl>
+          <dl>
+            <dt>JavaScript Source</dt>
+            <dd>Global objects should exist in namespaces</dd>
+            <dd>Variables and functions should be declared before used</dd>
+            <dd>Remove unused variables and functions</dd>
+            <dd>Avoid using eval / classic alert function</dd>
+            <dd>Use GET method for Ajax request</dd>
+            <dd>Ajax call should have loading icon</dd>
+            <dd>Include necessary JS file only</dd>
+          </dl>
+        </div>
+      </div>
+    </article>
+    <article class="list">
+      <h2><a href="javascript:void(0);">Code Review</a></h2>
+      <div class="content">
+        <div class="col">
+          <dl>
+            <dt>HTML Source</dt>
+            <dd>Check for layout, alignment, spacing, padding</dd>
+            <dd>Code does not contain inline JavaScript event listeners</dd>
+            <dd>Code does not contain inline style attributes</dd>
+            <dd>Code does not contain deprecated elements &amp; attributes</dd>
+            <dd>Code does not use all caps or all lowercase title</dd>
+            <dd>Page begins with a valid DTD (HTML5 doctype)</dd>
+            <dd>Code is indented using 2 spaces</dd>
+            <dd>Code is semantic</dd>
+            <dd>Tags and attributes are lowercase</dd>
+            <dd>Tags are closed and nested properly</dd>
+            <dd>Tables are only used to display tabular data</dd>
+            <dd>Element IDs are unique</dd>
+            <dd>Code validates against the W3C validator</dd>
+            <dd>Code validates against WCAG level 2</dd>
+            <dd>Form elements are paired with labels elements containing the for attribute</dd>
+            <dd>Form label / input pairs are wrapped with a block level element</dd>
+            <dd>Forms are logically arranged within fieldsets</dd>
+            <dd>Page has a proper outline (H1-H6 order)</dd>
+            <dd>Alt attributes exist on all img elements</dd>
+            <dd>Events and styles applied to :hover are also applied to :focus</dd>
+            <dd>Tabindex order is logical and intuitive</dd>
+            <dd>Appropriate use of HTML inputs (e.g. email, phone) to trigger corresponding on-screen keyboards</dd>
+          </dl>
+          <dl>
+            <dt>CSS Source</dt>
+            <dd>Consistent naming conventions are used</dd>
+            <dd>CSS validates against the W3C validator</dd>
+            <dd>CSS sprites are used to combine images</dd>
+            <dd>CSS shorthand is used for properties that support it</dd>
+          </dl>
+          <dl>
+            <dt>Code Review Tools</dt>
+            <dd>DOM Monster bookmarklet @ <a href="http://mir.aculo.us/dom-monster" target="_blank">http://mir.aculo.us/dom-monster</a></dd>
+            <dd>Link Checker @ <a href="http://validator.w3.org/checklink" target="_blank">http://validator.w3.org/checklink</a></dd>
+            <dd>HTML: W3C HTML validator @ <a href="http://validator.w3.org" target="_blank">http://validator.w3.org</a></dd>
+            <dd>CSS: W3C CSS validator @ <a href="http://jigsaw.w3.org/css-validator" target="_blank">http://jigsaw.w3.org/css-validator</a></dd>
+            <dd>CSS: CSSLint @ <a href="http://csslint.net" target="_blank">http://csslint.net</a></dd>
+            <dd>JavaScript: JSLint @ <a href="http://www.jslint.com" target="_blank">http://www.jslint.com</a></dd>
+            <dd>JavaScript: JSHint @ <a href="http://www.jshint.com" target="_blank">http://www.jshint.com</a></dd>
+            <dd>Performance: YSlow @ <a href="http://developer.yahoo.com/yslow" target="_blank">http://developer.yahoo.com/yslow</a></dd>
+            <dd>Performance: PageSpeed @ <a href="https://developers.google.com/speed/pagespeed" target="_blank">https://developers.google.com/speed/pagespeed</a></dd>
+            <dd>Accessibility: CynthiaSays @ <a href="http://www.cynthiasays.com" target="_blank">http://www.cynthiasays.com</a></dd>
+            <dd>Accessibility: AChecker @ <a href="http://achecker.ca/checker/index.php" target="_blank">http://achecker.ca</a></dd>
+          </dl>
+        </div>
+        <div class="col">
+          <dl>
+            <dt>JavaScript Source</dt>
+            <dd>No syntax/runtime errors and warnings in the code</dd>
+            <dd>No deprecated functions in the code</dd>
+            <dd>A method should not be larger than 40 lines of code. The basic idea is always a function should be viewable in single screen without scrolling</dd>
+            <dd>Check that each function is doing only a single thing. That is never function named createCustomer should delete the existing customer and create it again</dd>
+            <dd>Always try to initialize the variable before using that in a function</dd>
+            <dd>Always try to use constants in the left hand side of the comparison. That is instead of doing if (variable == 2) always use if (2 == variable)</dd>
+            <dd>If function returns something, there is a return method in all cases</dd>
+            <dd>Make sure user input is checked for value</dd>
+            <dd>No magic numbers. There should be no magic numbers like 6, 10, etc… Any numbers like this should be define as a constant. And Constants should be well commented about the purpose</dd>
+            <dd>Always try to have unit test for the new piece of code. In ideal condition we should have 100% unit test coverage</dd>
+            <dd>No functions or variables in the global namespace</dd>
+            <dd>Write efficient code, especially in loops</dd>
+            <dd>Don't append to the DOM in a loop. If possible do not read from it. It’s slow</dd>
+            <dd>Keep style in css, use classes</dd>
+            <dd>Use the best jQuery selector if possible</dd>
+            <dd>Don't select an object in jQuery more than once, use chaining or put it in a variable</dd>
+            <dd>Minimize http requests</dd>
+            <dd>Validate user input before making http requests</dd>
+            <dd>Don't use jQuery $.each</dd>
+            <dd>Handle specific errors</dd>
+            <dd>Provide the user with enough info to remedy the situation when errors occur if possible</dd>
+            <dd>Don't put an else right after a return. Delete the else, it's unnecessary and increases indentation level</dd>
+            <dd>Use two spaces for indentation</dd>
+            <dd>When fixing a problem, check to see if the problem occurs elsewhere in the same file, and fix it everywhere if possible</dd>
+            <dd>End the file with a newline</dd>
+            <dd>Declare local variables as near to their use as possible</dd>
+            <dd>Do not compare x == true or x == false. Use (x) or (!x) instead. x == true, in fact, is different from if (x)! Compare objects to null, numbers to 0 or strings to "" if there is chance for confusion</dd>
+            <dd>Make sure that your code doesn't generate any strict JavaScript warnings, such as duplicate variable declaration, mixing return; with return value; and undeclared variables or members</dd>
+            <dd>Use [value1, value2] to create a JavaScript array in preference to using new Array(value1, value2)</dd>
+            <dd>Use {key1: value1, key2: value2} to create a JavaScript object</dd>
+            <dd>If having defined a constructor you need to assign default properties it is preferred to assign an object literal to the prototype property</dd>
+            <dd>Use regular expressions, but use them wisely</dd>
+            <dd>Code has been run through JSLint @ <a href="http://jslint.com" target="_blank">http://jslint.com</a> or JSHint @ <a href="http://jshint.com" target="_blank">http://jshint.com</a></dd>
+          </dl>
+        </div>
+      </div>
+    </article>
+    <article class="list">
+      <h2><a href="javascript:void(0);">Unit Test</a></h2>
+      <div class="content">
+        <div class="col">
+          <dl>
+            <dt>HTML</dt>
+            <dd>Test on cross browsers</dd>
+            <dd>Test on different resolutions</dd>
+            <dd>Test on real devices</dd>
+            <dd>Test on CSS disabled</dd>
+            <dd>Use HTMLHint</dd>
+          </dl>
+          <dl>
+            <dt>CSS</dt>
+            <dd>Check pixel perfect</dd>
+            <dd>Use CSSLint</dd>
+          </dl>
+        </div>
+        <div class="col">
+          <dl>
+            <dt>JavaScript</dt>
+            <dd>Use JSHint</dd>
+            <dd>Use Qunit</dd>
+            <dd>Use Jasmine</dd>
+          </dl>
+        </div>
+      </div>
+    </article>
+    <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <noscript>JavaScript is off. Please enable to view full site.</noscript>
+  </body>
+</html>
